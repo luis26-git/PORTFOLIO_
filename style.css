@@ -1,0 +1,346 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f242d;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 12px;
+    
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #1f242d;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 10px;
+} 
+
+/* Definindo a animação de digitação */
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
+    font-size: 18px;
+    width: 0; /* Inicia o texto com width 0 */
+    animation: typing 4s steps(45) 1s infinite, blink 0.20s step-end infinite; /* Animação de digitação */
+  }
+  
+  /* Animação de digitação */
+  @keyframes typing {
+    to {
+      width: 100%; /* Aumenta a largura para 100% ao longo do tempo */
+    }
+  }
+  
+  /* Animação de "piscar" do cursor */
+  @keyframes blink {
+    50% {
+      border-color: transparent; /* O cursor pisca (desaparece) */
+    }
+  }
+  
+
+
+/* Estilo para os ícones */
+.button {
+    display: flex; /* Para alinhar os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaço entre os ícones */
+    margin-top: 20px; /* Ajuste o espaço superior, se necessário */
+}
+
+.icon i {
+    font-size: 5em; /* Tamanho inicial dos ícones */
+    color: #333; /* Cor padrão dos ícones */
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+/* Efeito hover para aumentar o tamanho dos ícones e alinhar */
+.icon:hover i {
+    font-size: 7.1em; /* Aumenta o tamanho do ícone */
+    transform: translateY(-5px); /* Dá um leve efeito de "elevação" no hover */
+}
+
+/* Quando o mouse passa por cima, os ícones ficam alinhados mais próximos */
+.button:hover {
+    gap: 10px; /* Reduz o espaço entre os ícones no hover */
+}
+
+/* Estilos para o contêiner que aplica o gradiente */
+.g
+
+
+
+
+
+/* Seção Sobre Mim */
+.about {
+    background-color: #323946;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column; /* Organiza os elementos na vertical */
+    justify-content: center; /* Centraliza os elementos na vertical */
+    font-size: 14px;
+    align-items: center; /* Centraliza os elementos na horizontal */
+}
+
+/* Estilo dos ícones */
+.skills-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 30px; /* Espaço entre o texto e os ícones */
+}
+
+.skills-icons i, .skills-icons img {
+    font-size: 40px; /* Tamanho dos ícones */
+    color: #00eeff; /* Cor dos ícones */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.skills-icons i:hover, .skills-icons img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone quando o mouse passa por cima */
+    color: #3498db; /* Altera a cor dos ícones ao passar o mouse */
+}
+
+.icon {
+    width: 40px; /* Tamanho da imagem do ícone */
+    height: 40px; /* Tamanho da imagem do ícone */
+}
+
+
+
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00eeff;
+    
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+
+
+.contato-link {
+    position: absolute; /* Posiciona o link em relação ao seu elemento pai (header) */
+    top: 30px;          /* Distância do topo */
+    left: 30px;         /* Distância da esquerda */
+    color: white;       /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 16px;    /* Tamanho da fonte do link */
+    font-weight: bold;  /* Deixa o texto em negrito */
+}
+
+.contato-link:hover {
+    color: #f1c40f; /* Cor do link quando o mouse passar sobre ele */
+}
+
+.foto-perfil {
+    width: 200px;         /* Ajuste o tamanho da imagem */
+    height: 200px;        /* Ajuste o tamanho da imagem */
+    border-radius: 50%;   /* Faz a imagem ficar redonda */
+    object-fit: cover;    /* Faz a imagem cobrir o círculo sem distorcer */
+    margin-bottom: 20px;  /* Espaço entre a foto e o texto */
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Tamanho da imagem */
+    border-radius: 50%; /* Para deixar a imagem circular */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    object-fit: cover; /* A imagem vai se ajustar sem distorcer */
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #00eeff;
+
+
+}
+
+
+
+
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Seção Projetos */
+.projects {
+    background-color: #1f242d;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #00eeff;
+    font-size: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Cards de Projetos */
+.project-card {
+    background-color: #323946;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+
+}
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-image {
+    width: 720px; /* Tamanho da imagem do projeto */
+    height: 400px; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px; /* Espaço entre a imagem e a descrição */
+    
+}
+
+.project-description {
+    flex: 1; /* Faz a descrição ocupar o restante do espaço */
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .project-content {
+        flex-direction: column; /* Para telas menores, coloca a imagem em cima da descrição */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .project-image {
+        width: 100%; /* Faz a imagem ocupar toda a largura disponível em dispositivos móveis */
+        height: auto;
+        margin-right: 0; /* Remove o espaço à direita */
+        margin-bottom: 20px; /* Adiciona espaço entre a imagem e a descrição */
+    }
+}
+
+
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .about h2, .projects h2, .contact h2 {
+        font-size: 2em;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
