@@ -24,8 +24,53 @@ body {
     padding: 80px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-    font-size: 10px;
+    font-size: 18px;
 } 
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #1f242d;
+    padding: 10px 0;
+    margin-bottom: 20px; /* Espaço entre a barra de navegação e o conteúdo abaixo */
+    border-radius: 10px;
+}
+
+/* Lista de navegação */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 2px; /* Espaçamento entre os itens */
+    margin-left: 20px; /* Distância da borda esquerda */
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover */
+.navbar ul li a:hover {
+    background-color: #3498db; /* Cor do fundo quando o link é hover */
+    color: #ffffff; /* Cor do texto quando o link é hover */
+}
+
+
+
+
+
+
+
 
 /* Definindo a animação de digitação */
 .typing {
@@ -57,25 +102,25 @@ body {
 .button {
     display: flex; /* Para alinhar os ícones horizontalmente */
     justify-content: center; /* Centraliza os ícones */
-    gap: 20px; /* Espaço entre os ícones */
+    gap: 30px; /* Espaço entre os ícones */
     margin-top: 20px; /* Ajuste o espaço superior, se necessário */
 }
 
 .icon i {
-    font-size: 5em; /* Tamanho inicial dos ícones */
+    font-size: 4em; /* Tamanho inicial dos ícones */
     color: #333; /* Cor padrão dos ícones */
-    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+    transition: all 0.5s ease; /* Transição suave para o efeito de hover */
 }
 
 /* Efeito hover para aumentar o tamanho dos ícones e alinhar */
 .icon:hover i {
-    font-size: 7.1em; /* Aumenta o tamanho do ícone */
+    font-size: 6.1em; /* Aumenta o tamanho do ícone */
     transform: translateY(-5px); /* Dá um leve efeito de "elevação" no hover */
 }
 
 /* Quando o mouse passa por cima, os ícones ficam alinhados mais próximos */
 .button:hover {
-    gap: 10px; /* Reduz o espaço entre os ícones no hover */
+    gap: 30px; /* Reduz o espaço entre os ícones no hover */
 }
 
 /* Estilos para o contêiner que aplica o gradiente */
@@ -100,20 +145,21 @@ body {
     display: flex;
     flex-direction: column; /* Organiza os elementos na vertical */
     justify-content: center; /* Centraliza os elementos na vertical */
-    font-size: 14px;
+    font-size: 19px;
     align-items: center; /* Centraliza os elementos na horizontal */
 }
 
 /* Estilo dos ícones */
 .skills-icons {
+   
     display: flex;
     justify-content: center; /* Centraliza os ícones */
-    gap: 20px; /* Espaçamento entre os ícones */
-    margin-top: 30px; /* Espaço entre o texto e os ícones */
+    gap: 30px; /* Espaçamento entre os ícones */
+    margin-top: 90px; /* Espaço entre o texto e os ícones */
 }
 
 .skills-icons i, .skills-icons img {
-    font-size: 40px; /* Tamanho dos ícones */
+    
     color: #00eeff; /* Cor dos ícones */
     transition: transform 0.3s ease, color 0.3s ease; /* Animação ao passar o mouse */
 }
@@ -124,10 +170,10 @@ body {
 }
 
 .icon {
-    width: 40px; /* Tamanho da imagem do ícone */
-    height: 40px; /* Tamanho da imagem do ícone */
+    width: 80px; /* Tamanho da imagem do ícone */
+    height: 80px; /* Tamanho da imagem do ícone */
+   
 }
-
 
 
 
@@ -161,8 +207,8 @@ body {
 }
 
 .foto-perfil {
-    width: 200px;         /* Ajuste o tamanho da imagem */
-    height: 200px;        /* Ajuste o tamanho da imagem */
+    width: 370px;         /* Ajuste o tamanho da imagem */
+    height: 370px;        /* Ajuste o tamanho da imagem */
     border-radius: 50%;   /* Faz a imagem ficar redonda */
     object-fit: cover;    /* Faz a imagem cobrir o círculo sem distorcer */
     margin-bottom: 20px;  /* Espaço entre a foto e o texto */
@@ -311,6 +357,102 @@ body {
 .contact ul li a:hover {
     text-decoration: underline;
 }
+
+/* Estilos para a seção de contato */
+.contact {
+    background-color: #323946;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00eeff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00eeff;
+    background-color: #fff;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-button {
+    background-color: #00eeff;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3498db;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .submit-button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Rodapé */
 footer {
