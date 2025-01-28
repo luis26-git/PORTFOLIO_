@@ -10,9 +10,16 @@
 <body>
     <!-- Cabeçalho -->
     <header class="header">
-      <!--   <a href="contatos/index.html" class="contato-link">Contatos</a> Link de Contato -->
+      
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
         
-        <img src="img luis/foto perfil.jpg" alt="foto de perfil"  class="foto-perfil" >
+        <img src="img luis/LUis.jpg" alt="foto de perfil"  class="foto-perfil" >
         <h1> <strong>Luis Henrique Solana Plana</strong>   </h1>
         <p> <strong class="typing"  >Data Analyst | BI Analyst</strong>  <br><br>
          </p>
@@ -32,7 +39,7 @@
     </header>
 
   <!-- Seção Sobre Mim -->
-<section class="about">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><section class="about"  id="sobre-mim" >
     <h2>Sobre Mim</h2>
     <p>Olá, sou o Luis Henrique Solana Plana
         Analista de dados | suporte técnico em TI 
@@ -53,7 +60,7 @@
     <img src="png icon/database-icon.png" alt="sql Server" title="sql Server" class="icon">
     
     <!-- Ícone do Python -->
-    <img src="png icon/python-programming-language-icon.png" alt="sql Server" title="sql Server" class="icon">
+    <img src="png icon/python-programming-language-icon.png" alt="sql Server" title="python" class="icon">
     
     
 </div>
@@ -67,7 +74,7 @@
 
    <!-- Seção Projetos -->
   
-   <section class="projects">
+   <br><br><br><br><br><br><br><br><br><section class="projects"  id="projetos" >
     <div class="container">
         <h2>Meus Projetos</h2>
         <div class="project-card">
@@ -163,12 +170,63 @@
 </section>
 
 
+<!-- Seção de Contato -->
+<section class="contact"  id="contato"  >
+    <h2>Enviar Contato</h2>
+    <form action="https://formsubmit.co/luisgit26@gmail.com" method="POST">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Seu e-mail">
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="text" name="phone" id="phone" placeholder="Seu telefone">
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" placeholder="Sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="submit-button">Enviar</button>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Rodapé -->
     <footer>
         <p>© 2025 Luis Henrique. Todos os direitos reservados.</p>
     </footer>
 </body>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        var name = document.getElementById('name').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+
+        if (name === "" || phone === "" || message === "") {
+            alert("Por favor, preencha todos os campos.");
+            event.preventDefault(); // Impede o envio do formulário se algum campo estiver vazio
+        }
+    });
+</script>
+
+
+
 </html>
 
 -
