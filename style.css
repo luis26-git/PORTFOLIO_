@@ -15,6 +15,18 @@ body {
     font-size: 12px;
     
 }
+  #texto{
+    color: #00eeff;
+    font-size: 35px;
+  }
+
+
+.container{
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
 
 /* Cabeçalho */
 .header {
@@ -324,12 +336,13 @@ body {
     color: #00eeff;
     font-size: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.projects h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
+
 
 /* Cards de Projetos */
 .project-card {
@@ -339,12 +352,14 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     color: white;
+    display: flex;
+    flex-direction: column;
 
 }
 .project-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .project-image {
@@ -612,4 +627,47 @@ footer {
         padding: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* Media Query para telas menores (ex: smartphones)  */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 10px;
+    }
+
+    iframe {
+        height: 160px; /* Reduz a altura do iframe em telas menores */
+    }
+
+    .project-description h3 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    .project-description p {
+        font-size: 1rem; /* Ajusta o tamanho da descrição em telas menores  */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .txt{
+        font-size: 1rem; /* Título ainda menor em telas muito pequenas */
+    }
+
+    .txt {
+        font-size: 0.9rem; /* Descrição ainda menor  */
+    }
+
+    iframe {
+        height: 250px; /* Ajuste extra para celulares muito pequenos */
+    } 
+}       
 
