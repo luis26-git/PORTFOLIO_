@@ -21,17 +21,17 @@ body {
     background-color: #1f242d;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 10px;
     border-radius: 10px;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 15px;
 } 
 
 /* Estilos para a barra de navegação */
 .navbar {
     background-color: #1f242d;
     padding: 10px 0;
-    margin-bottom: 20px; /* Espaço entre a barra de navegação e o conteúdo abaixo */
+    font-size: 10px;
     border-radius: 10px;
 }
 
@@ -41,8 +41,8 @@ body {
     padding: 0;
     display: flex;
     justify-content: flex-start; /* Alinha os itens à esquerda */
-    gap: 2px; /* Espaçamento entre os itens */
-    margin-left: 20px; /* Distância da borda esquerda */
+    gap: 1px; /* Espaçamento entre os itens */
+    margin-left: 10px; /* Distância da borda esquerda */
 }
 
 .navbar ul li {
@@ -65,8 +65,33 @@ body {
     color: #ffffff; /* Cor do texto quando o link é hover */
 }
 
+@media screen and (max-width: 700px) {
+    .header {
+        padding: 30px 10px;
+    }
 
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
 
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .navbar ul {
+        flex-direction: row; /* Coloca os itens do menu em coluna */
+        align-items: end; /* Centraliza os itens */
+    }
+
+    .navbar ul li a {
+        font-size: 1em;
+    }
+}
 
 
 
@@ -77,7 +102,7 @@ body {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
-    font-size: 18px;
+    font-size: 19px;
     width: 0; /* Inicia o texto com width 0 */
     animation: typing 4s steps(45) 1s infinite, blink 0.20s step-end infinite; /* Animação de digitação */
   }
@@ -102,7 +127,7 @@ body {
 .button {
     display: flex; /* Para alinhar os ícones horizontalmente */
     justify-content: center; /* Centraliza os ícones */
-    gap: 30px; /* Espaço entre os ícones */
+    gap: 10px; /* Espaço entre os ícones */
     margin-top: 20px; /* Ajuste o espaço superior, se necessário */
 }
 
@@ -114,17 +139,17 @@ body {
 
 /* Efeito hover para aumentar o tamanho dos ícones e alinhar */
 .icon:hover i {
-    font-size: 6.1em; /* Aumenta o tamanho do ícone */
-    transform: translateY(-5px); /* Dá um leve efeito de "elevação" no hover */
+    font-size: 5.1em; /* Aumenta o tamanho do ícone */
+    transform: translateY(-6px); /* Dá um leve efeito de "elevação" no hover */
 }
 
 /* Quando o mouse passa por cima, os ícones ficam alinhados mais próximos */
 .button:hover {
-    gap: 30px; /* Reduz o espaço entre os ícones no hover */
+    gap: 10px; /* Reduz o espaço entre os ícones no hover */
 }
 
 /* Estilos para o contêiner que aplica o gradiente */
-.g
+
 
 
 
@@ -145,7 +170,7 @@ body {
     display: flex;
     flex-direction: column; /* Organiza os elementos na vertical */
     justify-content: center; /* Centraliza os elementos na vertical */
-    font-size: 19px;
+    font-size: 15px;
     align-items: center; /* Centraliza os elementos na horizontal */
 }
 
@@ -189,6 +214,33 @@ body {
     line-height: 1.8;
     color: #ffffff;
 }
+
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 20px 10px;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .skills-icons {
+        flex-wrap: wrap; /* Quebra os ícones em várias linhas */
+        gap: 15px;
+    }
+
+    .skills-icons .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
 
 
 
@@ -317,6 +369,7 @@ body {
     font-size: 1.1em;
 }
 
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
     .project-content {
@@ -331,6 +384,70 @@ body {
         margin-bottom: 20px; /* Adiciona espaço entre a imagem e a descrição */
     }
 }
+
+
+.certificados {
+    text-align: center;
+    padding: 50px 0;
+    color: #00eeff;
+    font-size: 22px;
+}
+
+#certificados-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#certificado-info {
+    margin: 0 20px;
+}
+
+#certificado-img {
+    width: 800px;
+    height: auto;
+}
+
+
+
+.btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #742e9b;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-left {
+    margin-right: 20px;
+}
+
+#btn-right {
+    margin-left: 20px;
+}
+
+.btn:hover {
+    color: #5e2581;
+}
+
+i {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -446,7 +563,16 @@ textarea {
 
 
 
+@media screen and (max-width: 768px) {
+    #certificado-img {
+        width: 100%;
+        height: auto;
+    }
 
+    .btn {
+        font-size: 20px;
+    }
+}
 
 
 
@@ -486,3 +612,4 @@ footer {
         padding: 15px;
     }
 }
+
